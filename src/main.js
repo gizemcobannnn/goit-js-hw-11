@@ -9,7 +9,12 @@ document.getElementById("search-images").addEventListener("input",()=>{
     input = event.target.value;
 });
 
-async function fetchImages(input) {
+document.getElementById("button-search").addEventListener("click",()=>{
+    fetchImages();
+
+})
+
+async function fetchImages() {
     try{
         const response = await fetch("https://pixabay.com/api?key=46148629-af6e53c51d7dfe0604412e9db/${input}");
         return response.blob();
