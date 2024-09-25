@@ -16,3 +16,41 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+ul#gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.image-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.3em;
+}
+
+
+.image-list{
+  width: calc((100% / 3) - 10px);
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Kartlara hafif gölge ekliyoruz */
+  border-radius: 5px; /* Köşeleri yuvarlatıyoruz */
+  overflow: hidden; /* Taşan içeriği gizliyoruz */
+}
+
+
+.image-list img{
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  overflow: hidden; /* Taşan içeriği gizle */
+
+}
+
+.link-a {
+  display: block; /* Bağlantıyı blok seviyesinde yap */
+  overflow: hidden; /* Taşan içeriği gizle */
+}
+
